@@ -1,0 +1,6 @@
+outs:
+- md5: ebc3a187d5e6232ea758b8add4a3dcb7.dir
+  size: 788053040
+  nfiles: 41160
+  hash: md5
+  path: stanford_dogs
