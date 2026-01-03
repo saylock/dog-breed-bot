@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "typer (>=0.21.0,<0.22.0)"
 ]
 
 
@@ -22,3 +23,6 @@ dev = [
     "isort (>=7.0.0,<8.0.0)",
     "flake8 (>=7.3.0,<8.0.0)"
 ]
+
+[tool.poetry.scripts]
+dog-breed-bot = "dog_breed_bot.commands:app"
