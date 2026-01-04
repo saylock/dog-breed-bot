@@ -1,1 +1,4 @@
 [core]
+    remote = dropbox
+['remote "dropbox"']
+    url = ../dropbox:/dvc-dog-breed-bot
