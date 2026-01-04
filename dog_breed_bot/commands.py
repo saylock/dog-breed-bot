@@ -11,8 +11,10 @@ def hello() -> None:
 
 @app.command("prepare-data")
 def prepare_data() -> None:
-    """Prepare dataset splits + label mapping (placeholder for now)."""
-    typer.echo("prepare-data: not implemented yet")
+    """Prepare dataset splits + label mapping."""
+    from dog_breed_bot.data.prepare_splits import main as prepare_main
+
+    prepare_main()
 
 
 @app.command()
