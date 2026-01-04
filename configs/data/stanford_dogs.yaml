@@ -1,0 +1,8 @@
+train_csv: data/processed/train.csv
+val_csv: data/processed/val.csv
+test_csv: data/processed/test.csv
+class_to_idx: artifacts/class_to_idx.json
+
+batch_size: 32
+num_workers: 2
+image_size: 224

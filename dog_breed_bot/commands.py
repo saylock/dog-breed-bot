@@ -19,8 +19,10 @@ def prepare_data() -> None:
 
 @app.command()
 def train() -> None:
-    """Train the model (placeholder for now)."""
-    typer.echo("train: not implemented yet")
+    """Train the model."""
+    from dog_breed_bot.train.train import main as train_main
+
+    train_main()
 
 
 @app.command("export-onnx")

@@ -1,0 +1,21 @@
+seed: 42
+epochs: 30
+limit_train_batches: 1.0
+limit_val_batches: 1.0
+output_dir: artifacts/pt
+model:
+  num_classes: 120
+  freeze_backbone: true
+  lr: 0.001
+  weight_decay: 0.0001
+data:
+  train_csv: data/processed/train.csv
+  val_csv: data/processed/val.csv
+  test_csv: data/processed/test.csv
+  class_to_idx: artifacts/class_to_idx.json
+  batch_size: 32
+  num_workers: 2
+  image_size: 224
+mlflow:
+  tracking_uri: http://127.0.0.1:8080
+  experiment_name: dog-breed-stanford
