@@ -1,0 +1,5 @@
+outs:
+- md5: f21b8d2cafde5147c513d51baf9cc0a3
+  size: 183958077
+  hash: md5
+  path: best.ckpt
