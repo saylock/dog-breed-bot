@@ -46,7 +46,9 @@ def infer(
     print(predict(image_path=image_path, onnx_path=onnx_path))
 
 
-@app.command()
+@app.command("bot")
 def bot() -> None:
-    """Run Telegram bot (placeholder for now)."""
-    typer.echo("bot: not implemented yet")
+    """Run Telegram bot."""
+    from dog_breed_bot.bot.telegram_bot import main as bot_main
+
+    bot_main()

@@ -26,7 +26,9 @@ dependencies = [
     "onnxruntime (>=1.23.2,<2.0.0)",
     "pillow (>=12.1.0,<13.0.0)",
     "numpy (>=2.4.0,<3.0.0)",
-    "onnxscript (>=0.5.7,<0.6.0)"
+    "onnxscript (>=0.5.7,<0.6.0)",
+    "python-telegram-bot (==21.6)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
 ]
 
 
