@@ -1,4 +1,4 @@
 [core]
-    remote = dropbox
-['remote "dropbox"']
-    url = ../dropbox:/dvc-dog-breed-bot
+    remote = gdrive
+['remote "gdrive"']
+    url = gdrive://1tIbSNL4MJFvqVSinMz-pEUYCIVHgN9DW
