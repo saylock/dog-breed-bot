@@ -21,7 +21,12 @@ dependencies = [
     "scikit-learn (>=1.8.0,<2.0.0)",
     "pyopenssl (==24.2.1)",
     "cryptography (>=42.0.0)",
-    "dvc-gdrive (>=3.0.1,<4.0.0)"
+    "dvc-gdrive (>=3.0.1,<4.0.0)",
+    "onnx (>=1.20.0,<2.0.0)",
+    "onnxruntime (>=1.23.2,<2.0.0)",
+    "pillow (>=12.1.0,<13.0.0)",
+    "numpy (>=2.4.0,<3.0.0)",
+    "onnxscript (>=0.5.7,<0.6.0)"
 ]
 
 

@@ -26,17 +26,24 @@ def train() -> None:
 
 
 @app.command("export-onnx")
-def export_onnx() -> None:
-    """Export the trained model to ONNX (placeholder for now)."""
-    typer.echo("export-onnx: not implemented yet")
+def export_onnx(
+    ckpt_path: str = "artifacts/pt/best.ckpt",
+    out_path: str = "artifacts/onnx/model.onnx",
+) -> None:
+    from dog_breed_bot.export.onnx_export import export_onnx as _export
+
+    out = _export(ckpt_path=ckpt_path, out_path=out_path)
+    print(f"✅ Exported ONNX to: {out}")
 
 
 @app.command()
 def infer(
-    image: str = typer.Option(..., "--image", "-i", help="Path to input image")
+    image_path: str = typer.Option(..., "--image", "-i"),
+    onnx_path: str = "artifacts/onnx/model.onnx",
 ) -> None:
-    """Run inference on one image (placeholder for now)."""
-    typer.echo(f"infer: not implemented yet. image={image}")
+    from dog_breed_bot.infer.onnx_infer import predict
+
+    print(predict(image_path=image_path, onnx_path=onnx_path))
 
 
 @app.command()
