@@ -210,3 +210,6 @@ mlruns/
 mlflow.db
 outputs/
 .dvc/config.local
+
+data/raw/
+data/processed/

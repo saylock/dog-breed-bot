@@ -20,7 +20,8 @@ dependencies = [
     "matplotlib (>=3.10.8,<4.0.0)",
     "scikit-learn (>=1.8.0,<2.0.0)",
     "pyopenssl (==24.2.1)",
-    "cryptography (>=42.0.0)"
+    "cryptography (>=42.0.0)",
+    "dvc-gdrive (>=3.0.1,<4.0.0)"
 ]
 
 
